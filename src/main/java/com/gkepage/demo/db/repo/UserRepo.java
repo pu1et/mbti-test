@@ -24,14 +24,12 @@ public class UserRepo  {
     private Firestore db;
 
     public UserRepo() throws Exception{
-        //Firestore db = FirestoreOptions.getDefaultInstance().getService();
-        //this.db = db;
 
-        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream("/Users/pu1et/Desktop/wallet/key/AdminProject-datastoreaccount.json"))
+        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream("src/main/docker/[JSONFILE].json"))
         .createScoped(Lists.newArrayList("https://www.googleapis.com/auth/cloud-platform"));
         FirestoreOptions firestoreOptions = 
                 FirestoreOptions.newBuilder()
-                        .setProjectId("admin-project-281801")
+                        .setProjectId("[PROJECT_ID]")
                         .setCredentials(credentials)
                         .build();
 
@@ -41,11 +39,12 @@ public class UserRepo  {
 
     // Specify ProjectId
     public UserRepo(String projectId) throws Exception{
-        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream("/Users/pu1et/Desktop/wallet/key/AdminProject-datastoreaccount.json"))
+
+        GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream("src/main/docker/[JSONFILE].json"))
         .createScoped(Lists.newArrayList("https://www.googleapis.com/auth/cloud-platform"));
         FirestoreOptions firestoreOptions = 
                 FirestoreOptions.newBuilder()
-                        .setProjectId("admin-project-281801")
+                        .setProjectId("[PROJECT_ID]")
                         .setCredentials(credentials)
                         .build();
 
