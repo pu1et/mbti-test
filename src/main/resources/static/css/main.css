@@ -1,0 +1,64 @@
+@font-face{
+    font-family: mainfont;
+    /*src: url('../ttf/DoHyeon-Regular.ttf');*/
+    /*src: url('../ttf/Pangolin-Regular.ttf');*/
+    /*src: url('../ttf/AnticSlab-Regular.ttf');*/
+    src: url('../ttf/LuckiestGuy-Regular.ttf');
+}
+
+body{
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    font-family: mainfont;
+}
+
+.search {
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding-left: 350px;
+}
+
+li{
+    display: inline;
+}
+
+.bootstrap-select {
+    max-width: 100px;
+}
+
+
+.selectpicker{
+    width: 100px;
+    height: 100%;
+    border-style: solid;
+    font-size: 16px;
+    font-weight: 200;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+ .fa {
+ }
+
+.mbti-body{
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+ .mbti-row{
+     width: 100%;
+     display: table-row;
+ }
+ .mbti-box{
+     margin-left: 10px 10px 10px 10px;
+     width: 150px;
+     height: 80px;
+     display: table-cell;
+     border-radius: 5%;
+     border: 1px solid;
+     border-color: black;
+     font-size: 20px ;
+     font-weight: 200;
+ }
